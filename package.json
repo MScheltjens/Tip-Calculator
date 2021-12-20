@@ -1,0 +1,21 @@
+{
+  "name": "fooi-calculator-m.scheltjens",
+  "version": "1.0.0",
+  "description": "tip-calculator (school task)",
+  "main": "index.js",
+  "scripts": {
+    "css:prod": "sass ./css/style.scss ./css/style.css -s compressed --no-source-map",
+    "css:dev": "sass ./css/style.scss ./css/style.css -w",
+    "deploy": "surge ./ --domain https://tip-calculator-MaSch.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MScheltjens/Tip-Calculator.git"
+  },
+  "author": "MaSch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MScheltjens/Tip-Calculator/issues"
+  },
+  "homepage": "https://github.com/MScheltjens/Tip-Calculator#readme"
+}
