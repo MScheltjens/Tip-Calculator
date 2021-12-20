@@ -8,6 +8,71 @@
     <title>Tip-calculator</title>
 </head>
 <body>
-    <h1>Hallo</h1>
+    <header>
+        <h1 class="title">spli<br>tter</h1>
+    </header>
+<div class="container">
+    <main>
+            <div class="left">
+                <div class="left__bill">
+                    <h2 class="left__bill__heading">Bill</h1>
+                    <form action="#">
+                        <input type="number" class="left__bill__heading__input" placeholder="0">
+                    </form>
+                </div>
+                <div class="left__tip">
+                    <h2 class="left__tip__heading">Select Tip %</h1>
+                        <ul class="left__tip__list">
+                            <li class="left__tip__list__item">
+                                <div class="box">5%</div>
+                            </li>
+                            <li class="left__tip__list__item">
+                                <div class="box">10%</div>
+                            </li>
+                            <li class="left__tip__list__item left__tip__list__item--active">
+                                <div class="box--active">15%</div>
+                            </li>
+                            <li class="left__tip__list__item">
+                                <div class="box">25%</div>
+                            </li>
+                            <li class="left__tip__list__item">
+                                <div class="box">50%</div>
+                            </li>
+     
+                            <li class="left__tip__list__item left__tip__list__item--selected">
+                                <div class="box--selected">Custom</div>
+                            </li>
+                        </ul>
+                </div>
+                <div class="left__people">
+                    <h2 class= "left__people__heading">Number Of People</h2>
+                    <form action="#">
+                        <input type="number" class="left__people__input" placeholder="0">
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <ul class="calc-list">
+                    <li class="calc-list__item">
+                        <div class="calc-list__item__text">
+                            <h2 class="calc-list__item__text--head">Tip Amount</h2>
+                        <p class="calc-list__item__text--paragraph">/ person </p>
+                        </div>
+                        <span class="calc-list__item__span">$0.00</span>
+                    </li>
+                    <li class="calc-list__item">
+                        <div class="calc-list__item--text">
+                            <h2 class="calc-list__item__text--head">Tip Amount</h2>
+                        <p class="calc-list__item__text--paragraph">/ person </p>
+                        </div>
+                        <span class="calc-list__item__span">$0.00</span>
+                    </li>
+                </ul>
+                <button class="right__button">reset</button>
+            </div>
+        </main>
+    </div>
+
+        
 </body>
 </html>

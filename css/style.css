@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,6 +55,239 @@ table {
 
 * {
   box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+.title {
+  text-align: center;
+  margin: 160px auto 88px auto;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-family: "Space Mono";
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: white;
+  border-radius: 23px;
+  margin: 0 auto;
+  width: auto;
+  max-width: 920px;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.left {
+  margin: 35px 0px 35px 50px;
+  padding: 15px 15px;
+  border-radius: 13px;
+  width: 100%;
+  font-family: "Space Mono";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+.left__bill {
+  margin-bottom: 50px;
+}
+.left__bill__heading {
+  margin-bottom: 15px;
+}
+.left__bill__heading__input {
+  background-color: #f4fafa;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  font-family: "Space Mono";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #00494d;
+  text-align: right;
+  padding: 0 20px;
+}
+.left__bill__heading__input::placeholder {
+  text-align: right;
+  opacity: 50%;
+  font-family: "Space Mono";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+.left__tip__heading {
+  margin-bottom: 15px;
+}
+.left__tip__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.left__tip__list__item {
+  width: 110px;
+  height: 50px;
+  text-align: center;
+  background-color: #00494d;
+  border-radius: 5px;
+}
+.left__tip__list__item--selected {
+  background-color: #f4fafa;
+}
+.left__tip__list__item--active {
+  background-color: #26c0ab;
+}
+.left__tip__list__item .box {
+  margin: auto;
+  padding: 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.left__tip__list__item .box--selected {
+  color: #5e7a7d;
+  margin: auto;
+  padding: 12px;
+  font-weight: 700;
+}
+.left__tip__list__item .box--active {
+  color: #00494d;
+  margin: auto;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.left__people__heading {
+  margin-bottom: 15px;
+}
+.left__people__input {
+  background-color: #f4fafa;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: right;
+  padding: 0 20px;
+  font-family: "Space Mono";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #00494d;
+}
+.left__people__input::placeholder {
+  text-align: right;
+  opacity: 50%;
+  font-family: "Space Mono";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #5e7a7d;
+}
+
+.right {
+  background: #00494d;
+  margin: 35px 50px 35px 0;
+  padding: 40px;
+  border-radius: 13px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Space Mono";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #00494d;
+}
+.right__button {
+  text-transform: uppercase;
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  color: #00494d;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.calc-list {
+  margin-top: 10px;
+}
+.calc-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-bottom: 65px;
+}
+.calc-list__item__text--head {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.calc-list__item__text--paragraph {
+  color: #5e7a7d;
+  font-size: 10px;
+  font-weight: 700;
+}
+.calc-list__item__span {
+  color: #26c0ab;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 920px) {
+  .title {
+    margin-top: 88px;
+  }
+
+  main {
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+  }
+}
+@media only screen and (max-width: 565px) {
+  main {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .left {
+    margin: auto;
+  }
+
+  .right {
+    margin: auto;
+  }
+
+  .left__tip__list {
+    margin: auto 20px;
+    padding-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
